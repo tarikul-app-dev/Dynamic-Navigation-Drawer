@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/app_drawer"
+    android:elevation="16dp"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Main page content -->
+    <FrameLayout
+        android:id="@+id/app_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Navigation drawer content -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        >
+
+        <!-- Header -->
+        <RelativeLayout
+            android:id="@+id/drawer_header"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:elevation="4dp"
+            android:background="#90020835"
+            android:alpha="211"
+            >
+
+            <ImageView
+                android:id="@+id/imgv_user"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_app_icon_new"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <!--<TextView-->
+            <!--android:id="@+id/drawer_header_username"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxLines="1"-->
+
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="22dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_toRightOf="@+id/imgv_user"-->
+            <!--android:shadowColor="#000"-->
+            <!--android:shadowRadius="4"-->
+            <!--android:shadowDy="2"-->
+
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#FFF"-->
+
+            <!--/>-->
+        </RelativeLayout>
+
+        <!-- Menu -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:background="#9081D4A8"
+            android:alpha="211"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Home Button -->
+                <LinearLayout
+                    android:id="@+id/drawer_all_input_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="20dp">
+
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="22dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="Inputted Data"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <!-- Settings Button -->
+                <LinearLayout
+                    android:id="@+id/drawer_offline_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="20dp">
+
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="22dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="Offline Data"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/drawer_export_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="20dp">
+
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="22dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="Export Data"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/drawer_offer_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="20dp">
+
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="22dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="Offer Details"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/drawer_exist_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="20dp">
+
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/ic_home_black_24dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="22dp"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:text="All Exist Data"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lin_logout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#60d23851"
+            android:alpha="211"
+            >
+            <TextView
+                android:id="@+id/txv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:layout_marginLeft="45dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

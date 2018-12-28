@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#00574B"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_menuIcon"
+            android:src="@drawable/drawer_menu"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/txv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01XXXXXXXXX"
+            android:layout_below="@+id/imgv_user"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

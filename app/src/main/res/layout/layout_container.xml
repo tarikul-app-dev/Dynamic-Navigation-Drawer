@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/toolbar_container"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+       >
+
+        <!-- Back icon -->
+        <!--<ImageView-->
+            <!--android:id="@+id/toolbar_back"-->
+            <!--android:src="@drawable/back"-->
+            <!--android:clickable="true"-->
+            <!--android:visibility="visible"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+             <!--/>-->
+
+        <!-- Menu icon -->
+        <ImageView
+            android:id="@+id/toolbar_menuIcon"
+            android:src="@drawable/drawer_menu"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <!-- The app content will go here -->
+    <FrameLayout
+        android:id="@+id/app_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>
